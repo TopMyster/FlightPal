@@ -5,6 +5,7 @@ export default function Home() {
   return (
 <main>
     <div className={styles.introtext}>
+      <image src="favicon.ico"></image>
       <h1>Your Travel Companion. All in an App.</h1>
     </div>
 </main>
