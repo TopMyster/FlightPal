@@ -17,11 +17,10 @@ export default function Home() {
       <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
     </div>
   </div>
-<a href="/faq" > <button className={styles.signupbutton}>Sign Up</button></a>
   </center>
-    <div className={styles.introtext}>
-
-    </div>
+  <Image
+  src={''}
+  />
 </main>
   );
 }
