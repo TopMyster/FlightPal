@@ -1,4 +1,9 @@
 
+
+
+.main {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
@@ -18,7 +23,7 @@
   font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
   letter-spacing: -1px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 26.5px;
 }
 
 .introtextcontainer {
@@ -26,13 +31,14 @@
   padding: 2cm;
   text-align: center;
   border: 0;
+  column-gap: 16px;
 }
 
 .paragraphintrotext {
   color: #000000A6;
   font-weight: 500;
   line-height: 1.5em;
-  font-size: 17px;
+  font-size: 16px;
   padding: 1cm;
   font-style: bold;
 }

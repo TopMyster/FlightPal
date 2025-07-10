@@ -1,22 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from '/components/Navbar';
+
 
 export default function Home() {
   return (
-<main>
-      <span>
-        <Image 
-        src="/favicon.ico" 
-        alt="App Logo" width={150} 
-        height={40}
-        />
-      <nav>
-        <a href="page.js">Home</a>
-        <a href="page.js">Home</a>
-        <a href="page.js">Home</a>
-        <a href="page.js">Home</a>
-      </nav>
-      </span>
+<main className={styles.main}>
+  <Navbar/>
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
       <h1>Your Travel Companion. All in an App.</h1>
