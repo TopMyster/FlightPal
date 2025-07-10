@@ -7,6 +7,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
 <main className={styles.main}>
+  <center>
   <img src="/favicon.ico" width="450" height="100" alt="Logo" />
       <nav className={styles.nav}>
           <Link href="/" className={styles.navbtn}>Home</Link>
@@ -21,6 +22,7 @@ export default function Home() {
       <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
     </div>
   </div>
+  </center>
     <div className={styles.introtext}>
 
     </div>
