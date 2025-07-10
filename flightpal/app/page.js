@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
 <main>
-         <img src="favicon.ico" alt="App Logo" />
+         <img src="/favicon.ico" width="{100}" />
       <nav>
         <a href="/page.js">Home</a>
         <a href="page.js"></a>
