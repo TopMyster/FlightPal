@@ -42,3 +42,18 @@
   padding: 1cm;
   font-style: bold;
 }
+
+.navbtn {
+  margin-right: 20px;
+  padding: 8px 16px;
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.navbtn:hover {
+  background: #444;
+}

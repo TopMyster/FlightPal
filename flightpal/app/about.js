@@ -18,10 +18,10 @@ export default function Home() {
   <Navbar/>
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
-      <h1>Your Travel Companion. All in an App.</h1>
+      <h1>About</h1>
     </div>
     <div className={styles.paragraphintrotext}>
-      <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
+      <p>This is a tool that </p>
     </div>
   </div>
     <div className={styles.introtext}>
