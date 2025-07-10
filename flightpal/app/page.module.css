@@ -24,6 +24,12 @@
   letter-spacing: -1px;
   font-weight: 700;
   font-size: 26.5px;
+  transition: .3s;
+}
+
+.mainintrotext:hover{
+
+ scale: 1.1;
 }
 
 .introtextcontainer {
