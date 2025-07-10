@@ -92,3 +92,42 @@
 .signupbutton:active{
   scale: 95%;
 }
+
+.subbutton{
+  margin-top: 35px;
+  padding: 15px 90px;
+  font-size: 18px;
+  border-radius: 10px;
+     border-color: #0a0057;
+   background-color: #0a0057;
+   color: white;
+   font-weight: 600;
+    border: none;
+}
+
+.signinput {
+  margin-top: 30px;
+   font-size: 20px;
+   padding: 15px 40px;
+   border-radius: 10px;
+   border-color: #0a0057;
+    font-weight: 600;
+    border: none;
+    box-shadow: 2px 2px 50px  #5bb2ff;
+}
+
+.signupbox {
+  top: 15px;
+  position: relative;
+  background-color: #299bff;
+  padding: 5px 0px;
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.header {
+  font-size: 30px;
+  margin: 30px 0px 0px 0px;
+}

@@ -65,6 +65,7 @@
   display: inline-block;
   position: relative;
   opacity: 100%;
+  margin-bottom: 50px;
 }
 
 .navbtn:hover {

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { useRouter } from 'next/navigation';
-import styles from '/signup.module.css'
+import styles from './signup.module.css'
 
 export default function SignupPage() {
   const [email, setEmail] = useState('');
@@ -23,24 +23,27 @@ export default function SignupPage() {
   };
 
   return (
-    <div>
-      <h2>Sign Up</h2>
+    <center>
+       <img src="/favicon.ico" width="430" height="100" alt="Logo" />
+    <div className={styles.signupbox}>
+      <h1 className={styles.header} >Sign Up</h1>
       <form onSubmit={handleSignup}>
-        <input id="email"
+        <input  className={styles.signinput}
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         /><br />
-        <input
+        <input className={styles.signinput}
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         /><br />
-        <button type="submit">Sign Up</button>
+        <button  className={styles.subbutton} type="submit">Sign Up</button>
       </form>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
+    </center>
   );
 }
