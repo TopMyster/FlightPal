@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navbar from '/components/Navbar';
+import Navbar from '../components/navbar';
 import Link from 'next/link';
 
 
@@ -8,12 +8,7 @@ export default function Home() {
   return (
 <main className={styles.main}>
   <center>
-  <img src="/favicon.ico" width="410" height="90" alt="Logo" />
-      <nav className={styles.nav}>
-          <Link href="app/page.js" className={styles.navbtn}>Home</Link>
-          <Link href="/about" className={styles.navbtn}>About</Link>
-          <Link href="/signup" className={styles.navbtn}>FAQ</Link>
-        </nav> 
+  <Navbar />
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
       <h1>Your Travel Companion. All in an App.</h1>
