@@ -43,7 +43,7 @@
   font-style: bold;
 }
 
-.navbtn {
+.nav {
   margin-right: 20px;
   padding: 8px 16px;
   background: #222;
@@ -54,6 +54,7 @@
   transition: background 0.2s;
 }
 
-.navbtn:hover {
-  background: #444;
+.nav:hover {
+  transform: scale(1.15);
+  transition: 2s;
 }
