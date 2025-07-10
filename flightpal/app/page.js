@@ -5,8 +5,14 @@ export default function Home() {
   return (
 <main>
     <div className={styles.introtext}>
-      <image src="favicon.ico"></image>
-      <h1>Your Travel Companion. All in an App.</h1>
+       <img src="favicon.ico" alt="App Logo" />
+      <nav>
+        <a href="/page.js">Home</a>
+        <a href="page.js"></a>
+        <a href="page.js">Home</a>
+        <a href="page.js">Home</a>
+      </nav>
+      <h1>Your Travel Companion . All in an App.</h1>
     </div>
 </main>
   );
