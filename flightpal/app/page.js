@@ -8,7 +8,7 @@ export default function Home() {
   return (
 <main className={styles.main}>
   <center>
-  <img src="/favicon.ico" width="450" height="100" alt="Logo" />
+  <img src="/favicon.ico" width="410" height="90" alt="Logo" />
       <nav className={styles.nav}>
           <Link href="/" className={styles.navbtn}>Home</Link>
           <Link href="/about" className={styles.navbtn}>About</Link>
@@ -22,6 +22,7 @@ export default function Home() {
       <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
     </div>
   </div>
+<a href="/faq" > <button className={styles.signupbutton}>Sign Up</button></a>
   </center>
     <div className={styles.introtext}>
 
