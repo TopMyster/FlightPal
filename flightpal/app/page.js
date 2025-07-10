@@ -10,9 +10,9 @@ export default function Home() {
   <center>
   <img src="/favicon.ico" width="410" height="90" alt="Logo" />
       <nav className={styles.nav}>
-          <Link href="/" className={styles.navbtn}>Home</Link>
-          <Link href="/about" className={styles.navbtn}>About</Link>
-          <Link href="/faq" className={styles.navbtn}>FAQ</Link>
+          <Link href="app/page.js" className={styles.navbtn}>Home</Link>
+          <Link href="app/about/page.js" className={styles.navbtn}>About</Link>
+          <Link href="app/faq/page.js" className={styles.navbtn}>FAQ</Link>
         </nav> 
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
