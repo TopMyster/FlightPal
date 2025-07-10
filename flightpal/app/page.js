@@ -7,7 +7,7 @@ export default function Home() {
          <img src="/favicon.ico" width="{100}" />
       <nav>
         <a href="/page.js">Home</a>
-        <a href="page.js"></a>
+        <a href="page.js">About</a>
         <a href="page.js">Home</a>
         <a href="page.js">Home</a>
       </nav>
