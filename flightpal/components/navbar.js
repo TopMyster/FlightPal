@@ -12,10 +12,10 @@ export default function Navbar() {
 
       {/* Center: Nav Links */}
       <div className={styles.navCenter}>
-        <Link href="#" className={styles.navbarlinks}>Pricing</Link>
-        <Link href="#" className={styles.navbarlinks}>About</Link>
-        <Link href="#" className={styles.navbarlinks}>Press</Link>
-        <Link href="#" className={styles.navbarlinks}>Support</Link>
+        <Link href="#" className={styles.navbtn}>Home</Link>
+        <Link href="#" className={styles.navbtn}>About</Link>
+        <Link href="#" className={styles.navbtn}>FAQ</Link>
+        <Link href="#" className={styles.navbtn}>Support</Link>
       </div>
 
       {/* Right: CTA */}

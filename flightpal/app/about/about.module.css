@@ -1,0 +1,94 @@
+
+
+
+.main {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
+}
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}
+
+.mainintrotext {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 26.5px;
+  transition: .3s;
+}
+
+.mainintrotext:hover{
+
+ scale: 1.1;
+}
+
+.introtextcontainer {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
+  padding: 2cm;
+  text-align: center;
+  border: 0;
+  column-gap: 16px;
+}
+
+.paragraphintrotext {
+  color: #000000A6;
+  font-weight: 500;
+  line-height: 1.5em;
+  font-size: 16px;
+  padding: 1cm;
+  font-style: bold;
+}
+
+.nav{
+  margin-top: 6px;
+  background-color: rgb(0, 2, 96, 0.6);
+}
+
+.navbtn {
+  margin-right: 20px;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+  display: inline-block;
+  position: relative;
+  opacity: 100%;
+}
+
+.navbtn:hover {
+  transform: scale(1.2);
+  transition: .4s;
+}
+
+.signupbutton {
+  padding: 15px 50px;
+  margin: 4px 3px;
+  border-radius: 12px;
+  background-color: rgb(0, 2, 96, 0.65);
+  border: none;
+  color: white;
+  font-size: 15px;
+  transition: .3s;
+  box-shadow: 2px 2px 20px #4f4f4f7d;
+  font-weight: 600;
+}
+
+.signupbutton:hover{
+  scale: 109%;
+}
+
+.signupbutton:active{
+  scale: 95%;
+}

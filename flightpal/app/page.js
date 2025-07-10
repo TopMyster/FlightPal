@@ -11,7 +11,7 @@ export default function Home() {
   <img src="/favicon.ico" width="410" height="90" alt="Logo" />
       <nav className={styles.nav}>
           <Link href="app/page.js" className={styles.navbtn}>Home</Link>
-          <Link href="app/about/page.js" className={styles.navbtn}>About</Link>
+          <Link href="/about" className={styles.navbtn}>About</Link>
           <Link href="app/faq/page.js" className={styles.navbtn}>FAQ</Link>
         </nav> 
   <div className={styles.introtextcontainer}>

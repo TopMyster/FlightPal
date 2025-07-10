@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./about.module.css";
 import Navbar from '/components/Navbar';
 import Link from 'next/link';
 
