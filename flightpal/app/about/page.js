@@ -16,7 +16,7 @@ export default function Home() {
         </nav> 
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
-      <h1>Your Travel Companion. All in an App.</h1>
+      <h1>About</h1>
     </div>
     <div className={styles.paragraphintrotext}>
       <p>T</p>
