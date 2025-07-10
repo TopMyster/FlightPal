@@ -27,11 +27,6 @@
   transition: .3s;
 }
 
-.mainintrotext:hover{
-
- scale: 1.1;
-}
-
 .introtextcontainer {
   font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
   padding: 2cm;
@@ -49,29 +44,6 @@
   font-style: bold;
 }
 
-.nav{
-  margin-top: 6px;
-  background-color: rgb(0, 2, 96, 0.6);
-}
-
-.navbtn {
-  margin-right: 20px;
-  padding: 8px 16px;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-  display: inline-block;
-  position: relative;
-  opacity: 100%;
-}
-
-.navbtn:hover {
-  transform: scale(1.2);
-  transition: .4s;
-}
-
 .signupbutton {
   padding: 15px 50px;
   margin: 4px 3px;
@@ -83,43 +55,54 @@
   transition: .3s;
   box-shadow: 2px 2px 20px #4f4f4f7d;
   font-weight: 600;
+  background: transparent !important;
 }
 
-.signupbutton:hover{
+.subbutton:hover{
   scale: 109%;
 }
 
-.signupbutton:active{
+.subbutton:active{
   scale: 95%;
 }
 
 .subbutton{
+  transition: .2s;
   margin-top: 35px;
   padding: 15px 90px;
-  font-size: 18px;
+  font-size: 17px;
   border-radius: 10px;
      border-color: #0a0057;
-   background-color: #0a0057;
+   background: #100277;
+  box-shadow: 0 8px 32px 0 rgba(74, 179, 255, 0.37);
+  backdrop-filter: blur(10px);
    color: white;
    font-weight: 600;
     border: none;
+    margin-bottom: 50px;
 }
 
 .signinput {
   margin-top: 30px;
-   font-size: 20px;
+   font-size: 17px;
    padding: 15px 40px;
    border-radius: 10px;
-   border-color: #0a0057;
     font-weight: 600;
     border: none;
-    box-shadow: 2px 2px 50px  #5bb2ff;
+    text-align: center;
+    background-color: #ffffffaf;
+  box-shadow: 0 6px 30px 0 rgba(74, 179, 255, 0.37);
+  backdrop-filter: blur(10px);
+
 }
 
 .signupbox {
   top: 15px;
   position: relative;
-  background-color: #299bff;
+
+  background-color: rgba(255, 255, 255, 0.773);
+  box-shadow: 0 8px 32px 0 rgba(74, 179, 255, 0.37);
+  backdrop-filter: blur(10px);
   padding: 5px 0px;
   width: 400px;
   height: 500px;

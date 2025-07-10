@@ -8,12 +8,7 @@ export default function Home() {
   return (
 <main className={styles.main}>
   <center>
-  <img src="/favicon.ico" width="410" height="90" alt="Logo" />
-      <nav className={styles.nav}>
-          <Link href="/" className={styles.navbtn}>Home</Link>
-          <Link href="app/about.js" className={styles.navbtn}>About</Link>
-          <Link href="/faq" className={styles.navbtn}>FAQ</Link>
-        </nav> 
+     <Navbar/>
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
       <h1>About</h1>
