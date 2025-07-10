@@ -3,12 +3,10 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main>
-    <body>
-        <h1>Hello World</h1>
-        <script src="script.js"></script>
-    </body>
-</main> 
-
+<main>
+    <div className={styles.introtext}>
+      <h1>Your Travel Companion. All in an App.</h1>
+    </div>
+</main>
   );
 }

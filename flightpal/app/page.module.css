@@ -167,7 +167,9 @@ a.secondary {
   }
 }
 
-            body {
-                font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif
-;
-            }
+.introtext {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "System Default", sans-serif;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
