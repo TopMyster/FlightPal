@@ -12,7 +12,7 @@ export default function Home() {
       <nav className={styles.nav}>
           <Link href="app/page.js" className={styles.navbtn}>Home</Link>
           <Link href="/about" className={styles.navbtn}>About</Link>
-          <Link href="app/faq/page.js" className={styles.navbtn}>FAQ</Link>
+          <Link href="/signup" className={styles.navbtn}>FAQ</Link>
         </nav> 
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 import { useRouter } from 'next/navigation';
+import styles from '/signup.module.css'
 
 export default function SignupPage() {
   const [email, setEmail] = useState('');
@@ -25,7 +26,7 @@ export default function SignupPage() {
     <div>
       <h2>Sign Up</h2>
       <form onSubmit={handleSignup}>
-        <input
+        <input id="email"
           type="email"
           placeholder="Email"
           value={email}
