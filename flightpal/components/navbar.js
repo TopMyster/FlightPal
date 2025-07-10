@@ -27,10 +27,10 @@ export default function Navbar() {
         </div>
         {/* Desktop Nav */}
         <div className={styles.navCenter}>
-          <Link href="#" className={styles.navbarlinks}>Home</Link>
-          <Link href="#" className={styles.navbarlinks}>About</Link>
-          <Link href="#" className={styles.navbarlinks}>FAQ</Link>
-          <Link href="#" className={styles.navbarlinks}>Support</Link>
+          <Link href="/" className={styles.navbarlinks}>Home</Link>
+          <Link href="/about" className={styles.navbarlinks}>About</Link>
+          <Link href="/faq" className={styles.navbarlinks}>FAQ</Link>
+          <Link href="/support" className={styles.navbarlinks}>Support</Link>
         </div>
 
         {/* CTA */}

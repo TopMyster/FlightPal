@@ -17,6 +17,7 @@ export default function Home() {
       <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
     </div>
   </div>
+  <img src="https://dailycollegian.com/wp-content/uploads/2018/04/da5bdde1b36200bb174a958bb64eefe6.jpg"/>
   </center>
   <Image
   src={''}
