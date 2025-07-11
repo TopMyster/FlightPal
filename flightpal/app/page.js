@@ -17,9 +17,15 @@ export default function Home() {
       <p>The only travel app that allows you to find flights, track your plane, give alerts about your flights, and log them—All in one practical and clean app.</p>
     </div>
   </div>
-  <img src="https://dailycollegian.com/wp-content/uploads/2018/04/da5bdde1b36200bb174a958bb64eefe6.jpg"/>
+  <ul className={styles.featurelist}>
+    <h1>Features</h1>
+<li>•Stay updated with live flight status.</li>
+<li>•Find flights from top airlines in seconds.</li>
+<li>•Find hotels nearby to your flights destination.</li>
+<li>•Get notified about delays, cancellations, and boarding times.</li>
+<li></li>
+ </ul>
   </center>
- 
 </main>
   );
 }
