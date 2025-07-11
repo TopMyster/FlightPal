@@ -13,10 +13,6 @@
 
 }
 
-.featurelist{
-  font-weight: 900;
-}
-
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
@@ -42,6 +38,7 @@
   text-align: center;
   border: 0;
   column-gap: 16px;
+  margin-top: rem;
 }
 
 .paragraphintrotext {
@@ -77,7 +74,7 @@
   transition: .4s;
 }
 
-.signupbutton {
+.signupButton {
   padding: 15px 50px;
   margin: 4px 3px;
   border-radius: 12px;
@@ -90,10 +87,11 @@
   font-weight: 600;
 }
 
-.signupbutton:hover{
-  scale: 109%;
+.showcase {
+  transform: translateX(81px);
 }
 
-.signupbutton:active{
-  scale: 95%;
+.showcaseContainer {
+  display: flex;
+  justify-content: center;
 }
