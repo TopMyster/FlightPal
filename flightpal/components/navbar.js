@@ -38,8 +38,8 @@ export default function FlightyNavbar() {
                 <Image
                   src="/flightpalwing.png"
                   alt="flightpal logo wing"
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   className={styles.iconLogo}
                 />
                 <div className={styles.divider} style={{ height: '20px', marginLeft: '0' }} />
