@@ -14,10 +14,10 @@ export default function Home() {
       <h1>About</h1>
     </div>
     <div className={styles.paragraphintrotext}>
-      <p>T</p>
+      <p>FlightPal is your all-in-one travel companion, designed to simplify your journey from takeoff to touchdown. Our intuitive tool helps you quickly find the best flights to your chosen destination, then seamlessly suggests nearby hotels to make your stay comfortable and convenient. Whether you're planning a getaway to Barcelona, Austin, Texas, Lagos, Nigeria, or Bangkok, Thailand, FlightPal ensures you have everything you need for a smooth and enjoyable trip.</p>
     </div>
   </div>
-<a href="/faq" > <button className={styles.signupbutton}>Sign Up</button></a>
+<a href="/signup" > <button className={styles.signupbutton}>Sign Up</button></a>
   </center>
     <div className={styles.introtext}>
 

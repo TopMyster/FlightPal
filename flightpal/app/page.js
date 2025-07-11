@@ -19,9 +19,7 @@ export default function Home() {
   </div>
   <img src="https://dailycollegian.com/wp-content/uploads/2018/04/da5bdde1b36200bb174a958bb64eefe6.jpg"/>
   </center>
-  <Image
-  src={''}
-  />
+ 
 </main>
   );
 }
