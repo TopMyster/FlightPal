@@ -38,7 +38,7 @@
   text-align: center;
   border: 0;
   column-gap: 16px;
-  margin-top: rem;
+  margin-top: 5rem;
 }
 
 .paragraphintrotext {
@@ -50,29 +50,7 @@
   font-style: bold;
 }
 
-.nav{
-  margin-top: 6px;
-  background-color: rgb(0, 2, 96, 0.6);
-}
 
-.navbtn {
-  margin-right: 20px;
-  padding: 8px 16px;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-  display: inline-block;
-  position: relative;
-  opacity: 100%;
-  margin-bottom: 50px;
-}
-
-.navbtn:hover {
-  transform: scale(1.2);
-  transition: .4s;
-}
 
 .signupButton {
   padding: 15px 50px;

@@ -1,10 +1,12 @@
 'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function FlightyNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,45 +17,67 @@ export default function Navbar() {
 
   return (
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
-      <div className={`${isScrolled ? styles.scrolledContent : styles.navContent}`}>
+      <motion.div
+        className={isScrolled ? styles.scrolledContent : styles.navContent}
+        layout
+        transition={{ type: "spring", stiffness: 500, damping: 40 }}
+      >
         {/* Left Logo/Icon */}
         <div className={styles.navLeft}>
-  {isScrolled && (
-    <>
-      <Image
-        src="/flightpalwing.png"
-        alt="flightpal logo wing"
-        width={32}
-        height={32}
-        className={`${styles.iconLogo} ${styles.logoVisible}`}
-      />
-      <div className={styles.divider} />
-    </>
-  )}
-  {!isScrolled && (
-    <a href="#">
-    <Image
-      src="/favicon.ico"
-      alt="FlightPal Logo"
-      width={150}
-      height={40}
-      className={`${styles.logo} ${styles.logoVisible}`}
-    />
-    </a>
-  )}
-</div>
-
+          <AnimatePresence mode="wait">
+            {isScrolled ? (
+              <motion.div
+                key="iconLogo"
+                initial={{ opacity: 0, y: -8, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -8, scale: 0.9 }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className={styles.logoDividerGroup}
+                style={{ display: 'flex', alignItems: 'center', gap: '12px' }}
+              >
+                <Image
+                  src="/flightpalwing.png"
+                  alt="flightpal logo wing"
+                  width={32}
+                  height={32}
+                  className={styles.iconLogo}
+                />
+                <div className={styles.divider} style={{ height: '20px', marginLeft: '0' }} />
+              </motion.div>
+            ) : (
+              <motion.a
+                key="fullLogo"
+                href="#"
+                initial={{ opacity: 0, y: 8, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 8, scale: 0.95 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <Image
+                  src="/favicon.ico"
+                  alt="FlightPal Logo"
+                  width={150}
+                  height={40}
+                  className={styles.logo}
+                />
+              </motion.a>
+            )}
+          </AnimatePresence>
+        </div>
 
         {/* Nav Links */}
-        <div className={styles.navCenter}>
+        <motion.div className={styles.navCenter} layout>
           <Link href="#">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/FAQ">FAQ</Link>
           <Link href="#">Support</Link>
-        </div>
+        </motion.div>
 
         {/* Get Started */}
-        <div className={isScrolled ? styles.navRightScrolled : styles.navRight}>
+        <motion.div
+          className={isScrolled ? styles.navRightScrolled : styles.navRight}
+          layout
+        >
           <Link href="#">
             Get Started
             <svg
@@ -72,8 +96,8 @@ export default function Navbar() {
               />
             </svg>
           </Link>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </header>
   );
 }
