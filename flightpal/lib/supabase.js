@@ -9,8 +9,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 export async function searchFlights(searchParams) {
   const { from, to, departure_date, passengers, class_type } = searchParams
   
-  // This would integrate with flight APIs like Amadeus
-  // For now, we'll return mock data
+
   return {
     flights: [
       {

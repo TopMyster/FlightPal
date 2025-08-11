@@ -2,12 +2,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from '../components/navbar';
 import Link from 'next/link';
+import FlightSearch from "@/components/FlightSearch";
 
 
 export default function Home() {
   return (
 <main className={styles.main}>
   <Navbar />
+  <FlightSearch />
   <div className={styles.introtextcontainer}>
     <div className={styles.mainintrotext}>
       <h1>Your Travel Companion. All in an App.</h1>
