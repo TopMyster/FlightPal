@@ -6,7 +6,14 @@
   z-index: 100;
   transition: all 0.3s ease;
 }
+/*@media (prefers-color-scheme: dark) {
+  .navbar {
+    --foreground: #ededed;
+    background-color: rgba(10, 10, 10, 0.2);
 
+  }
+}
+*/
 /* CONTAINER STATES */
 .navContent,
 .scrolledContent {
@@ -20,18 +27,33 @@
 .navContent {
   padding: 14px 48px;
   max-width: 1080px;
-  border-radius: 60px;
   background: white;
+  border-radius: 9999px;
 }
 
 .scrolledContent {
   padding: 10px 24px;
   max-width: 640px;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 36px;
+  backdrop-filter: blur(10px);
 }
+
+/*@media (prefers-color-scheme: dark) {
+    .scrolledContent {
+        backdrop-filter: blur(24px);
+        background-color: rgba(10, 10, 10, 0.2);
+        border-bottom-width: 1px;
+        border-color: rgba(255, 255, 255, 0.1);
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-style: solid;
+        border-top-width: 1px;
+    }
+}
+*/
 
 /* LEFT: LOGO + ICON */
 .navLeft {
@@ -60,9 +82,13 @@
 .divider {
   width: 1px;
   height: 18px;
-  background-color: #dcdcdc;
+  background-color: rgba(0, 0, 0, 0.7);
   transform-origin: center;
   margin-top: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  
 }
 
 /* CENTER: NAV LINKS */
@@ -73,7 +99,7 @@
   align-items: center;
   font-size: 15px;
   font-weight: 500;
-  color: #333;
+  color: rgba(0, 0, 0, 0.7);
   padding-top: 2px; /* added to align with scrolled version */
 }
 
@@ -84,8 +110,14 @@
 }
 
 .navCenter a:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
+
+/*@media (prefers-color-scheme: dark) {
+    .navCenter a{
+        color: rgba(255, 255, 255, 0.8);
+    }
+}*/
 
 /* RIGHT: GET STARTED PILL */
 .navRight,
@@ -118,8 +150,8 @@
 .navRightScrolled a {
   display: flex;
   align-items: center;
-  gap: 4px;
-  background: #111;
+  gap: 4px;;
+  background: linear-gradient(rgb(39, 40, 47) 0%, rgb(13, 12, 15) 100%);
   color: white;
   padding: 4px 10px;
   font-size: 13px;
@@ -131,6 +163,14 @@
   transition: all 0.2s ease;
 }
 
+/*@media (prefers-color-scheme: dark) {
+  .navRightScrolled a {
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    backdrop-filter: blur(24px);
+    color: black;
+  }
+}*/
+
 .navRightScrolled a:hover {
   background: #000;
 }
@@ -138,4 +178,8 @@
 .navRight svg,
 .navRightScrolled svg {
   flex-shrink: 0;
+}
+
+.getStartedPhone {
+    stroke: black;
 }

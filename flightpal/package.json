@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.864.0",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.54.0",
+    "dotenv": "^17.2.1",
     "framer-motion": "^12.23.3",
     "next": "15.3.5",
     "react": "^19.0.0",

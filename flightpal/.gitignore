@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Development test files
+test-*.js
+check-schema.js
+fix-database.sql

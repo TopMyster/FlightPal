@@ -71,6 +71,7 @@ export default function FlightyNavbar() {
           <Link href="/about">About</Link>
           <Link href="/FAQ">FAQ</Link>
           <Link href="#">Support</Link>
+          <Link href="/signin">Log in</Link>
         </motion.div>
 
         {/* Get Started */}
@@ -93,6 +94,7 @@ export default function FlightyNavbar() {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className={styles.getStartedPhone}
               />
             </svg>
           </Link>
